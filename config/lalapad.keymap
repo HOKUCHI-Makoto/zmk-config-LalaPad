@@ -180,7 +180,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RCTL|MOD_LCTL)>;
+            mods = <(MOD_RCTL|MOD_LCTL|MOD_LSFT|MOD_RSFT)>;
         };
 
         mo1_2: mo1_2 {
