@@ -268,11 +268,11 @@
         SYM-NUM_LAYER {
             display-name = "sym-num_layer";
             bindings = <
-&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none             &kp TILDE             &kp INT_YEN            &kp UNDER        &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9
-&trans  &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS              &kp KP_PLUS      &kp KP_ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
-&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE          &kp AMPERSAND         &kp HASH               &none            &kp KP_EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans  &trans       &trans             &trans      &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans           &trans           &kp NUMBER_0  &dot_comma    &kp ENTER
-                     &kp LC(TAB)        &trans      &kp LS(LC(TAB))   &trans                &trans                 &kp LS(LC(TAB))  &trans           &kp LC(TAB)
+&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none                 &kp TILDE              &kp INT_YEN  &kp UNDER        &kp SLASH     &kp N7        &kp N8        &kp N9
+&trans  &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS    &kp PLUS         &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE              &kp AMPERSAND          &kp HASH     &none            &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans  &trans       &trans             &trans      &trans                &trans                 &trans       &trans           &trans        &kp NUMBER_0  &dot_comma    &kp ENTER
+                     &kp LC(TAB)        &trans      &kp LS(LC(TAB))       &trans                 &trans       &kp LS(LC(TAB))  &trans        &kp LC(TAB)
             >;
 
             sensor-bindings = <&scroll_up_down>, <&scroll_left_right>;
