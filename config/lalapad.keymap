@@ -220,16 +220,6 @@
             bindings = <&mkp RCLK>;
             key-positions = <20 21>;
         };
-
-        lclk_left {
-            bindings = <&mkp LCLK>;
-            key-positions = <16 15>;
-        };
-
-        rclk_left {
-            bindings = <&mkp RCLK>;
-            key-positions = <15 14>;
-        };
     };
 
     macros {
@@ -305,7 +295,7 @@
                 <&inc_dec_kp UP_ARROW DOWN_ARROW>;
 
             bindings = <
-&trans  &macro_security  &none          &kp UP_ARROW  &none         &none          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE    &kp F7         &kp F8   &kp F9
+&trans  &macro_security  &kp HOME       &kp UP_ARROW  &kp END       &none          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE    &kp F7         &kp F8   &kp F9
 &trans  &macro_norm      &kp LEFT       &kp DOWN      &kp RIGHT     &kp PAGE_UP    &kp INSERT       &kp HOME        &kp PAGE_UP    &kp F4         &kp F5   &kp F6
 &trans  &macro_short     &none          &fenrir       &everything   &kp PAGE_DOWN  &kp DELETE       &kp END         &kp PAGE_DOWN  &kp F1         &kp F2   &kp F3
 &trans  &trans           &trans         &trans        &trans        &trans         &trans           &trans          &trans         &kp F10        &kp F11  &kp F12
