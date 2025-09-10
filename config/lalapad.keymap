@@ -220,6 +220,11 @@
             bindings = <&mkp RCLK>;
             key-positions = <20 21>;
         };
+
+        az_ms {
+            bindings = <&macro_ms>;
+            key-positions = <13 25>;
+        };
     };
 
     macros {
@@ -257,6 +262,13 @@
             bindings = <&kp LS(LC(BACKSPACE))>;
             label = "EVERYTHING";
         };
+
+        macro_ms: macro_ms {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp M &kp LS(M) &kp A &kp K &kp N0 &kp T &kp N0 &kp DLLR &kp N3>;
+            label = "MACRO_MS";
+        };
     };
 
     keymap {
@@ -268,7 +280,7 @@
 
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp E            &kp R        &kp T          &kp Y         &kp U           &kp I           &kp O             &kp P              &bs_del
-&kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G          &kp H         &kp J           &kp K           &kp L             &kp SEMI           &kp SQT
+&kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G          &kp H         &kp J           &kp K           &kp L             &kp SEMI           &kp K_APPLICATION
 &kp LSHFT  &kp Z         &kp X         &kp C            &kp V        &kp B          &kp N         &kp M           &kp COMMA       &kp PERIOD        &kp SLASH          &kp MINUS
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo1_2           &kp SPACE    &lt 3 LANG2    &lt 3 LANG1   &kp ENTER       &mo1_2          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &rshift_rctrl
                          &allow_end    &allow_pagedown  &allow_home  &allow_pageup  &kp UP_ARROW  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
