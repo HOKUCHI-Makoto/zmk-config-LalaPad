@@ -295,11 +295,11 @@
         SYM-NUM_LAYER {
             display-name = "sym-num_layer";
             bindings = <
-&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none                 &kp TILDE              &kp INT_YEN  &kp UNDER        &kp SLASH     &kp N7        &kp N8        &kp N9
-&trans  &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS    &kp PLUS         &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
-&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE              &kp AMPERSAND          &kp HASH     &kp MINUS        &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans  &trans       &trans             &trans      &trans                &trans                 &trans       &trans           &trans        &kp NUMBER_0  &dot_comma    &kp ENTER
-                     &kp LC(TAB)        &trans      &kp LS(LC(TAB))       &trans                 &trans       &kp LS(LC(TAB))  &trans        &kp LC(TAB)
+&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none            &kp TILDE             &kp INT_YEN            &kp UNDER        &kp SLASH     &kp N7        &kp N8        &kp N9
+&trans  &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS         &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE         &kp AMPERSAND         &kp HASH               &kp MINUS        &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans  &trans       &trans             &trans      &trans           &trans                &trans                 &trans           &trans        &kp NUMBER_0  &dot_comma    &kp ENTER
+                     &kp LC(TAB)        &trans      &kp LS(LC(TAB))  &trans                &trans                 &kp LS(LC(TAB))  &trans        &kp LC(TAB)
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
@@ -337,7 +337,7 @@
             display-name = "mouse_r_layer";
             bindings = <
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&mo 7   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5   &trans
+&mo 5   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5   &trans
 &trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
                    &trans     &trans     &trans  &trans  &trans  &mkp MB4   &trans     &mkp MB5
@@ -359,7 +359,7 @@
             display-name = "mouse_l_layer";
             bindings = <
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&mo 7   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5   &trans
+&mo 7   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 7   &trans
 &trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
                    &trans     &trans     &trans  &trans  &trans  &mkp MB4   &trans     &mkp MB5
