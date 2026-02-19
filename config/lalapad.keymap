@@ -138,7 +138,7 @@
             #binding-cells = <0>;
             bindings = <&kp UP>, <&kp PAGE_UP>;
 
-            mods = <(MOD_LALT|MOD_RALT)>;
+            mods = <(MOD_LALT)>;
             label = "ALLOW_PAGEUP";
         };
 
@@ -147,7 +147,7 @@
             #binding-cells = <0>;
             bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
 
-            mods = <(MOD_LALT|MOD_RALT)>;
+            mods = <(MOD_LALT)>;
             label = "ALLOW_PAGEDOWN";
         };
 
@@ -156,7 +156,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp HOME>;
 
-            mods = <(MOD_LALT|MOD_RALT)>;
+            mods = <(MOD_LALT)>;
             label = "ALLOW_HOME";
         };
 
@@ -165,7 +165,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp END>;
 
-            mods = <(MOD_LALT|MOD_RALT)>;
+            mods = <(MOD_LALT)>;
             label = "ALLOW_END";
         };
 
