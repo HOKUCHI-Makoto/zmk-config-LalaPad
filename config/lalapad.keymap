@@ -138,7 +138,7 @@
             #binding-cells = <0>;
             bindings = <&kp UP>, <&kp PAGE_UP>;
 
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
             label = "ALLOW_PAGEUP";
         };
 
@@ -147,7 +147,7 @@
             #binding-cells = <0>;
             bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
 
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
             label = "ALLOW_PAGEDOWN";
         };
 
@@ -156,7 +156,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp HOME>;
 
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
             label = "ALLOW_HOME";
         };
 
@@ -165,7 +165,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp END>;
 
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
             label = "ALLOW_END";
         };
 
@@ -285,7 +285,7 @@
 
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp E            &kp R        &kp T             &kp Y               &kp U        &kp I            &kp O             &kp P              &bs_del
-&kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G             &kp H               &kp J        &kp K            &kp L             &kp SEMI           &kp MINUS
+&kp TAB    &kp A         &kp S         &kp D            &kp F        &kp G             &kp H               &kp J        &kp K            &kp L             &kp SEMI           &kp GRAVE
 &kp LSHFT  &kp Z         &kp X         &kp C            &kp V        &kp B             &kp N               &kp M        &kp COMMA        &kp PERIOD        &kp SLASH          &mt RIGHT_SHIFT K_APPLICATION
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo1_2           &kp SPACE    &lt 3 LANGUAGE_2  &lt 3 LANG_HANGEUL  &kp ENTER    &mo1_2           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RCTRL
                          &allow_end    &allow_pagedown  &allow_home  &allow_pageup     &allow_pageup       &allow_home  &allow_pagedown  &allow_end
@@ -295,11 +295,11 @@
         SYM-NUM_LAYER {
             display-name = "sym-num_layer";
             bindings = <
-&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none            &kp TILDE             &kp INT_YEN            &kp UNDER        &kp SLASH     &kp N7        &kp N8        &kp N9
-&trans  &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS         &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
-&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE         &kp AMPERSAND         &kp HASH               &kp MINUS        &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans  &trans       &trans             &trans      &trans           &trans                &trans                 &trans           &trans        &kp NUMBER_0  &dot_comma    &kp ENTER
-                     &kp LC(TAB)        &trans      &kp LS(LC(TAB))  &trans                &trans                 &kp LS(LC(TAB))  &trans        &kp LC(TAB)
+&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none                 &kp TILDE              &kp INT_YEN  &kp UNDER        &kp SLASH     &kp N7        &kp N8        &kp N9
+&trans  &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS    &kp PLUS         &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE              &kp AMPERSAND          &kp HASH     &kp MINUS        &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans  &trans       &trans             &trans      &trans                &trans                 &trans       &trans           &trans        &kp NUMBER_0  &dot_comma    &kp ENTER
+                     &kp LC(TAB)        &trans      &kp LS(LC(TAB))       &trans                 &trans       &kp LS(LC(TAB))  &trans        &kp LC(TAB)
             >;
 
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
