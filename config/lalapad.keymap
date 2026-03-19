@@ -295,9 +295,9 @@
         SYM-NUM_LAYER {
             display-name = "sym-num_layer";
             bindings = <
-&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &none                 &kp TILDE              &kp INT_YEN  &kp UNDER        &kp SLASH     &kp N7        &kp N8        &kp N9
+&trans  &kp GRAVE    &kp DOUBLE_QUOTES  &kp EQUAL   &kp HASH              &kp TILDE              &kp INT_YEN  &kp UNDER        &kp SLASH     &kp N7        &kp N8        &kp N9
 &trans  &kp AT       &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS    &kp PLUS         &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6
-&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE              &kp AMPERSAND          &kp HASH     &kp MINUS        &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans  &kp PERCENT  &kp EXCLAMATION    &kp CARET   &kp PIPE              &kp AMPERSAND          &kp SLASH    &kp ASTERISK     &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
 &trans  &trans       &trans             &trans      &trans                &trans                 &trans       &trans           &trans        &kp NUMBER_0  &dot_comma    &kp ENTER
                      &kp LC(TAB)        &trans      &kp LS(LC(TAB))       &trans                 &trans       &kp LS(LC(TAB))  &trans        &kp LC(TAB)
             >;
@@ -312,11 +312,11 @@
                 <&inc_dec_kp UP_ARROW DOWN_ARROW>;
 
             bindings = <
-&trans     &macro_security  &kp HOME       &kp UP_ARROW  &kp END       &none          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE    &kp F7         &kp F8   &kp F9
-&kp ENTER  &macro_norm      &kp LEFT       &kp DOWN      &kp RIGHT     &kp PAGE_UP    &kp INSERT       &kp HOME        &kp PAGE_UP    &kp F4         &kp F5   &kp F6
-&trans     &macro_short     &none          &fenrir       &everything   &kp PAGE_DOWN  &kp DELETE       &kp END         &kp PAGE_DOWN  &kp F1         &kp F2   &kp F3
-&trans     &trans           &trans         &trans        &trans        &trans         &trans           &trans          &trans         &kp F10        &kp F11  &kp F12
-                            &kp LA(RIGHT)  &trans        &kp LA(LEFT)  &trans         &trans           &kp RA(LEFT)    &trans         &kp RA(RIGHT)
+&trans     &macro_security  &kp HOME       &kp UP_ARROW  &kp END       &kp PAUSE_BREAK  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp C_PAUSE    &kp F7         &kp F8   &kp F9
+&kp ENTER  &macro_norm      &kp LEFT       &kp DOWN      &kp RIGHT     &kp PAGE_UP      &kp INSERT       &kp HOME        &kp PAGE_UP    &kp F4         &kp F5   &kp F6
+&trans     &macro_short     &none          &fenrir       &everything   &kp PAGE_DOWN    &kp DELETE       &kp END         &kp PAGE_DOWN  &kp F1         &kp F2   &kp F3
+&trans     &trans           &trans         &trans        &trans        &trans           &trans           &trans          &trans         &kp F10        &kp F11  &kp F12
+                            &kp LA(RIGHT)  &trans        &kp LA(LEFT)  &trans           &trans           &kp RA(LEFT)    &trans         &kp RA(RIGHT)
             >;
         };
 
